@@ -6,7 +6,7 @@ GitHub Copilot 官方提供 metric API , 仅以此程序用于辅助 GitHub Copi
 ## 📁 项目结构
 
 ```
-ctrip/
+proxy/
 ├── proxy-es-streaming.py      # 主代理服务器入口
 ├── config.py                  # 配置管理模块
 ├── auth.py                    # 认证管理模块
