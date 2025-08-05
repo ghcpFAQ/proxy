@@ -1,4 +1,4 @@
-# Copilot Proxy - Mitmproxy遥测数据采集系统
+# GitHub Copilot Proxy - 遥测数据采集
 
 一个基于mitmproxy的GitHub Copilot遥测数据采集和分析程序，支持实时数据流处理、Elasticsearch存储和多种配置选项。
 GitHub Copilot 官方提供 metric API , 仅以此程序用于辅助 GitHub Copilot 的用量数据的采集，及某些场景下需要对代码进出开发环境时的必要监控。
