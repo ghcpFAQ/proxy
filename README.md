@@ -16,7 +16,7 @@ ctrip/
 ├── file_manager.py            # 文件管理模块
 ├── elasticsearch_client.py    # Elasticsearch客户端
 ├── creds.txt                  # 认证凭据文件
-├── certs_v1/                  # SSL证书目录
+├── certs/                  # SSL证书目录
 │   ├── mitmproxy_ca.crt
 │   ├── mitmproxy_ca.key
 │   └── ...
