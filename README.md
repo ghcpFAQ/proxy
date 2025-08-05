@@ -180,14 +180,14 @@ mitmdump -s proxy-es-streaming.py --listen-port 8080 --set confdir=./certs --set
 
 系统支持多种遥测事件类型：
 
-| 事件类型 | 处理器 | 说明 |
-|---------|--------|------|
-| `reportEditArc` | `handle_edit_arc_event` | 编辑弧事件 |
-| `editSources.details` | `handle_edit_sources_details_event` | 编辑源详情事件 |
-| `trackEditSurvival` | `handle_track_edit_survival_event` | 编辑存活跟踪事件 |
-| `conversation.*` | `handle_conversation_events` | 会话相关事件 |
-| `inlineConversation.*` | `handle_conversation_events` | 内联会话事件 |
-| 其他事件 | `handle_general_telemetry_event` | 通用遥测事件 |
+| 事件类型               | 处理器                              | 说明                                                      |
+| ---------------------- | ----------------------------------- | --------------------------------------------------------- |
+| `reportEditArc`        | `handle_edit_arc_event`             | vscode 中 copilot 单次变更统计事件，可观测到代码行数      |
+| `editSources.details`  | `handle_edit_sources_details_event` | vscode 中 copilot 单次变更统计事件                        |
+| `trackEditSurvival`    | `handle_track_edit_survival_event`  | jetbrains 中 copilot 单次存活跟踪事件, 无代码行数与字符数 |
+| `conversation.*`       | `handle_conversation_events`        | 聊天框内的 copy 与 替换动作的记录                         |
+| `inlineConversation.*` | `handle_conversation_events`        | 编辑器内联聊天框的copy 与 替换动作的记录                                  |
+| 其他事件               | `handle_general_telemetry_event`    | 通用遥测事件                                              |
 
 ## 📊 数据分析
 
